@@ -36,7 +36,7 @@ def deleteTask():
     listTask()
     task_to_delete = int(input("Enter # to delete: "))
     if task_to_delete >= 0 and task_to_delete < len(tasks):
-        removed_task = tasks.pop(task_to_delete-1)
+        removed_task = tasks.pop(task_to_delete)
         print(f"Task '{removed_task}' deleted.")
         print("\n")
     else:
